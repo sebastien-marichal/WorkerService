@@ -12,7 +12,7 @@ namespace WorkerService
         #region Const
         private const int TIMER_DELAY = 2000;
         private const int TIMER_PERIODE = 60 * 1000;
-        #endregion 
+        #endregion
 
         #region Fields
         private readonly ILogger<TestAsyncSonar> logger;
@@ -25,11 +25,6 @@ namespace WorkerService
             this.logger = logger;
             this.logger.LogInformation("SystemStatus provider is ready...");
         }
-        #endregion
-
-        #region IResourceProvider
-        public event EventHandler<IList<int>>? OnResource;
-
         #endregion
 
         #region IHostedService
